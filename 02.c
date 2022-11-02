@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void M1(){
+int M1(){
 	char  S; 
 	double w;	//收益 
 	double p;	//佣金
@@ -8,7 +8,7 @@ void M1(){
 	while(again){
 		printf("请输入收益：");
 		scanf("%lf",&w);
-		if(w < 10){
+		if(w < 10 && w >= 0){
 			p = w * 0.1;
 		}
 		else if(w > 10 && w <= 20){
@@ -23,8 +23,12 @@ void M1(){
 		else if(w > 60 && w <= 100){
 			p = 10 * 0.1 + 10 * 0.075 + 20 * 0.05 + 20 * 0.03 + (w - 60) * 0.015;
 		}
-		else{
+		else if(w > 100){
 			p = 10 * 0.1 + 10 * 0.075 + 20 * 0.05 + 20 * 0.03 + 40 * 0.015 + (w - 100) * 0.001;
+		}
+		else{
+			printf("数据错误，进程中止！");
+			return 0;
 		}
 		printf("所产生的佣金 %lf \n",p);
 		printf("\n想再玩一次？ [输入 Y 再来一次 \n");
@@ -38,8 +42,9 @@ void M1(){
 			again = 0;
 		}
 	}
+	return 0;
 }
-void M2(){
+int M2(){
 	char  S;
 	int T;
 	double w[113];	//收益
@@ -52,7 +57,7 @@ void M2(){
 	for(i = 0;i <= T - 1;i++){
 		printf("请输入第 %d 组数据：",i + 1);
 		scanf("%lf",&w[i]);
-		if(w[i] < 10){
+		if(w[i] < 10 && w[i] >= 0){
 			p[i] = w[i] * 0.1;
 		}
 		else if(w[i] > 10 && w[i] <= 20){
@@ -67,8 +72,12 @@ void M2(){
 		else if(w[i] > 60 && w[i] <= 100){
 			p[i] = 10 * 0.1 + 10 * 0.075 + 20 * 0.05 + 20 * 0.03 + (w[i] - 60) * 0.015;
 		}
-		else{
+		else if(w[i] > 100){
 			p[i] = 10 * 0.1 + 10 * 0.075 + 20 * 0.05 + 20 * 0.03 + 40 * 0.015 + (w[i] - 100) * 0.001;
+		}
+		else{
+			printf("数据错误，进程中止！");
+			return 0;
 		}
 	}
 	for(j = 0;j <= T - 1;j++){

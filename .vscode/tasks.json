@@ -6,9 +6,9 @@
             "command": "C:\\dev-cpp\\dev-cpp\\Dev-Cpp\\MinGW32\\bin\\gcc.exe",
             "args": [
                 "-g",
-                "${workspaceFolder}\\GBK_TEST.c",
+                "${workspaceFolder}\\02.c",
                 "-o",
-                "${fileDirname}\\GBK_TEST.exe"
+                "${fileDirname}\\02.exe"
             ],
             "options": {
                 "cwd": "C:\\dev-cpp\\dev-cpp\\Dev-Cpp\\MinGW32\\bin"
