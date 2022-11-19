@@ -6,9 +6,9 @@
             "command": "C:\\dev-cpp\\dev-cpp\\Dev-Cpp\\MinGW32\\bin\\gcc.exe",
             "args": [
                 "-g",
-                "${workspaceFolder}\\02.c",
+                "${workspaceFolder}\\2022Y11M19D-schoolwork\\04.c",
                 "-o",
-                "${fileDirname}\\02.exe"
+                "${fileDirname}\\04.exe"
             ],
             "options": {
                 "cwd": "C:\\dev-cpp\\dev-cpp\\Dev-Cpp\\MinGW32\\bin"
