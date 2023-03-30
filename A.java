@@ -47,9 +47,9 @@ public class A {
         System.out.println("输入序号定位要编辑的项目：");
         objNumber = codeInput.nextInt();
         System.out.println("现在，请输入名字：");
-        name[objNumber] = codeInput.nextLine();
+        name[objNumber] = codeInput.next();
         System.out.println("现在，请输入学号：");
-        studentNumber[objNumber] = codeInput.nextLine();
+        studentNumber[objNumber] = codeInput.next();
         System.out.println("现在，请输入年龄：");
         age[objNumber] = codeInput.nextInt();
         System.out.println("录入完毕！");
