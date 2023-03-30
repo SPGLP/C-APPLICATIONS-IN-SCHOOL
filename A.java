@@ -5,52 +5,54 @@ import java.util.*;
 import java.util.Scanner;
 
 public class A {
-    String name[] = new String[99];                 //Ãû×Ö
-    String studentNumber[] = new String[99];        //Ñ§ºÅ
-    int age[] = new int[99];                        //ÄêÁä
-    Scanner codeInput = new Scanner(System.in);     //Ö¸ÁîÉ¨ÃèÆ÷
-    String codeText;                                //ÎÄ±¾Ö¸Áî½ÓÊÜ±äÁ¿
-    int objNumber;                                  //Êı×ÖÖ¸Áî½ÓÊÜ±äÁ¿
+    String name[] = new String[99];                 //åå­—
+    String studentNumber[] = new String[99];        //å­¦å·
+    int age[] = new int[99];                        //å¹´é¾„
+    Scanner codeInput = new Scanner(System.in);     //æŒ‡ä»¤æ‰«æå™¨
+    int codeText;                                   //æŒ‡ä»¤æ¥å—å˜é‡
+    int objNumber;                                  //æ•°å­—æŒ‡ä»¤æ¥å—å˜é‡
 
     public void main(String args[]) {
         commandcenter();
     }
 
-    public void commandcenter() {                   //Ö÷²Ëµ¥¿ØÖÆÌ¨
-        System.out.println("ÇëÑ¡ÔñÒ»Ïî·şÎñ£º");
-        System.out.println("Search -- ²éÑ¯");
-        System.out.println("Edit -- Â¼Èë");
-        System.out.println("ÊäÈë´úÂë¿ªÊ¼¹¤×÷£º");
-        codeText = codeInput.nextLine();
-        if (codeText == "Search") {
+    public void commandcenter() {                   //ä¸»èœå•æ§åˆ¶å°
+        System.out.println("è¯·é€‰æ‹©ä¸€é¡¹æœåŠ¡ï¼š");
+        System.out.println("1 -- æŸ¥è¯¢");
+        System.out.println("2 -- å½•å…¥");
+        System.out.println("è¾“å…¥ä»£ç å¼€å§‹å·¥ä½œï¼š");
+        codeText = codeInput.nextInt();
+        if (codeText == 1) {
             SearchData();
         }
-        else if (codeText == "Edit") {
+        else if (codeText == 2) {
             EditData();
         }
     }
 
-    public void SearchData() {                      //²éÑ¯Êı¾İ
-        System.out.println("ÊäÈëĞòºÅ²éÑ¯£º");
+    public void SearchData() {                      //æŸ¥è¯¢æ•°æ®
+        System.out.println("è¾“å…¥åºå·æŸ¥è¯¢ï¼š");
         objNumber = codeInput.nextInt();
         if (name[objNumber] != null) {
             System.out.println(name[objNumber]);
             System.out.println(studentNumber[objNumber]);
             System.out.println(age[objNumber]);
+        } else {
+            System.out.println("æ­¤é¡¹ç›®ä¸å­˜åœ¨è®°å½•");
         }
         commandcenter();
     }
 
-    public void EditData() {                        //±à¼­Êı¾İ
-        System.out.println("ÊäÈëĞòºÅ¶¨Î»Òª±à¼­µÄÏîÄ¿£º");
+    public void EditData() {                        //ç¼–è¾‘æ•°æ®
+        System.out.println("è¾“å…¥åºå·å®šä½è¦ç¼–è¾‘çš„é¡¹ç›®ï¼š");
         objNumber = codeInput.nextInt();
-        System.out.print("ÏÖÔÚ£¬ÇëÊäÈëÃû×Ö£º");
+        System.out.println("ç°åœ¨ï¼Œè¯·è¾“å…¥åå­—ï¼š");
         name[objNumber] = codeInput.nextLine();
-        System.out.print("ÏÖÔÚ£¬ÇëÊäÈëÑ§ºÅ£º");
+        System.out.println("ç°åœ¨ï¼Œè¯·è¾“å…¥å­¦å·ï¼š");
         studentNumber[objNumber] = codeInput.nextLine();
-        System.out.print("ÏÖÔÚ£¬ÇëÊäÈëÄêÁä£º");
+        System.out.println("ç°åœ¨ï¼Œè¯·è¾“å…¥å¹´é¾„ï¼š");
         age[objNumber] = codeInput.nextInt();
-        System.out.println("Â¼ÈëÍê±Ï£¡");
+        System.out.println("å½•å…¥å®Œæ¯•ï¼");
         commandcenter();
     }
 }
