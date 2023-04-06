@@ -16,8 +16,8 @@ public class CoatAPP {
         /* 算法语句 */
         System.out.println("======================");
         System.out.println("请输入劳务费：");
-        System.out.println("======================");
         moneyW = mInput.nextDouble();
+        System.out.println("======================");
         coat = (moneyW - 800) * 0.20;
         moneyS = moneyW - coat;
         System.out.println("======================");
