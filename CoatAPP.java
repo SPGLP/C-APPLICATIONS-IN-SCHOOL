@@ -15,7 +15,7 @@ public class CoatAPP {
 
         /* 算法语句 */
         System.out.println("======================");
-        System.out.println("请输入劳务费：");
+        System.out.print("请输入劳务费：");
         moneyW = mInput.nextDouble();
         System.out.println("======================");
         if (moneyW > 800) {
