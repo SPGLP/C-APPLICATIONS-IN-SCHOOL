@@ -18,8 +18,13 @@ public class CoatAPP {
         System.out.println("请输入劳务费：");
         moneyW = mInput.nextDouble();
         System.out.println("======================");
-        coat = (moneyW - 800) * 0.20;
-        moneyS = moneyW - coat;
+        if (moneyW > 800) {
+            coat = (moneyW - 800) * 0.20;
+            moneyS = moneyW - coat;
+        } else {
+            coat = 0;
+            moneyS = moneyW;
+        }
         System.out.println("======================");
         System.out.println("需要支付税费：" + coat);
         System.out.println("税后劳务费剩余：" + moneyS);
