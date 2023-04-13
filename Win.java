@@ -8,6 +8,8 @@ import javax.swing.*;
 
 public class Win {
     public static void main(String[] args) {
-        JFrame window1 = new JFrame("你是一个一个")；
+        WinComponent window1 = new WinComponent();
+        window1.setBounds(114, 114, 100, 100);
+        window1.setTitle("114");
     }
 }
