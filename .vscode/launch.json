@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CostAPP_Plus",
+            "request": "launch",
+            "mainClass": "CostAPP_Plus",
+            "projectName": "C-APPLICATIONS-IN-SCHOOL_b9171d50"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoatAPP_Plus",
+            "request": "launch",
+            "mainClass": "CoatAPP_Plus",
+            "projectName": "C-APPLICATIONS-IN-SCHOOL_b9171d50"
+        },
+        {
+            "type": "java",
             "name": "CoatAPP",
             "request": "launch",
             "mainClass": "CoatAPP",
