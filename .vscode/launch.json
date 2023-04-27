@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Win",
+            "request": "launch",
+            "mainClass": "Win",
+            "projectName": "C-APPLICATIONS-IN-SCHOOL_e0b0df9d"
+        },
+        {
+            "type": "java",
+            "name": "Launch CostAPP_Plus",
+            "request": "launch",
+            "mainClass": "CostAPP_Plus",
+            "projectName": "C-APPLICATIONS-IN-SCHOOL_e0b0df9d"
+        },
+        {
+            "type": "java",
             "name": "Win",
             "request": "launch",
             "mainClass": "Win",
